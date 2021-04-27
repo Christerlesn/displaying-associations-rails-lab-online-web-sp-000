@@ -1,4 +1,5 @@
 <% @artists.each do |a| %>
-  <%= a.name %>
+  <li><%= a.name %> - <%= a.songs.each do |s| s.title %></li>
   <p><%= a.song_count %> song </p>
+  
 <% end %>
